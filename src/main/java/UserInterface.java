@@ -8,7 +8,6 @@ public class UserInterface {
         Hotel hotel = new Hotel();
         UserService userService = new UserService();
         int input;
-        boolean test = true;
 
         do {
             System.out.println("\n\n          Hotel Menu");
@@ -39,9 +38,9 @@ public class UserInterface {
                     userService.setRoomAvailable(number, hotel);
                     break;
                 case 9:
-                    test = false;
+                    return;
             }
         }
-        while (test);
+        while (true);
     }
 }
