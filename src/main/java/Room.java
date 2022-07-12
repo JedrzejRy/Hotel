@@ -23,4 +23,14 @@ public class Room {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "roomNumber=" + roomNumber +
+                ", capacity=" + capacity +
+                ", isBathroom=" + isBathroom +
+                ", isAvailable=" + isAvailable +
+                '}';
+    }
 }
